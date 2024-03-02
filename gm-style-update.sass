@@ -1,0 +1,382 @@
+$accent-color: #00BCD4
+$body-black: #1d1d1f
+    
+.headerclass, .mobile-headerclass, .kt-mainnavsticky .sticky-wrapper.is-sticky #nav-main
+  background: #ffffff url(https://www.gimtadieniomuge.lt/wp-content/uploads/2015/09/bg-head.png) top center repeat-x
+  @media screen and ( min-width: 992px )
+    background-position-y: -15px
+      
+
+    
+//header
+
+#logo
+    img
+        max-width: 200px
+        height: auto
+
+// page header
+
+.page-header
+    border-top: 0px solid #eee
+
+//Layout
+
+.col-md-4
+    &.footercol1
+        overflow: hidden
+
+.home-padding
+    padding: 0 0 30px
+
+
+//porfolio
+
+.portfolio iframe, .single-post iframe
+    width: 100%
+    height: 380px
+
+.portfolio_item    
+    border: 1px solid #eeeeee
+    .portfoliolink
+        opacity: 1
+    .piteminfo
+        p
+            color: #444
+            font-size: 9pt
+            line-height: 1.2em
+        h5   
+            line-height: 1em
+            font-weight: normal
+            font-size: medium 
+
+.portfolionav
+    display:none
+
+.postlist div#kad-blog-grid .search_item .postcontent .entry-content
+    overflow: hidden
+
+// Search
+
+.form-search
+    max-width: 263px    
+
+///////////////////////////////////////////////////    
+// nav
+///////////////////////////////////////////////////  
+
+.mobileclass
+  background: #fff
+
+.kad-mobile-nav
+  .kad-nav-inner
+    li
+      a:hover, &.current-menu-item>a
+        background: rgba(0, 188, 212, 1)
+        color: #fff
+
+// .kad-mnav :not(.sf-dropdown-menu)
+//   li
+//     >a
+//       font-weight: bold!important
+.kad-mnav
+  >li
+    >a
+      font-weight: bold!important
+
+
+
+
+#nav-second
+  @media screen and ( min-width: 992px )     
+    padding: .5rem 
+    ul.sf-menu
+        display: flex
+        justify-content: space-around
+        // width: 92%
+        float: none
+        margin: auto
+        >li
+            margin: 0
+            width: auto
+            padding: 0 20px
+            border: 1px solid transparent
+            border-radius: 30px
+            margin: 5px 0
+            transition: all 0.2s
+            &.current-menu-item, &.current_page_parent, &.current-menu-parent
+                // background: #ff4949
+                background: $accent-color                
+                >a
+                    color: #ffffff
+                &:hover
+                    >a
+                        color: $accent-color                  
+            &:hover
+                background: transparent
+                border: 1px solid #00BCD4
+            a
+                color: $body-black
+                &:hover
+                    color: $accent-color
+            >a
+              padding: .75rem 0
+              color: $body-black   
+              text-transform: uppercase
+              font-weight: 600
+        ul
+            border-radius: 10px
+            background: transparent
+            padding-top: 8px
+            border: none
+            box-shadow: none
+            // naudoti kaip borderi
+            li
+                background: $accent-color                
+                box-shadow: 2px 2px 5px 0 rgba(0,0,0,.1)
+                border-right: 1px solid $accent-color
+                border-left: 1px solid $accent-color 
+                border-bottom: 1px solid #ffffff61 
+                &:hover
+                    background: #ffffff
+                &:first-child
+                    border-top: 1px solid $accent-color 
+                    border-top-left-radius: 10px
+                    border-top-right-radius: 10px
+                &:last-child
+                    border-bottom-left-radius: 10px
+                    border-bottom-right-radius: 10px
+                    border-bottom: 1px solid $accent-color    
+                a
+                    font-size: 15px
+                    color: #ffffff
+                    line-height: 1.5
+                    font-weight: 400
+
+.kt-showsub-indicator ul.sf-menu>li.sf-dropdown>a:after
+  top: 50%
+  margin-top: -8px
+  right: -2px
+  height: auto
+
+// pagenavi
+
+.wp-pagenavi
+    a, span
+      display: inline-flex
+      align-items: center
+      justify-content: center
+      font-size: 16px
+      padding: 8px
+      border-color: $accent-color
+      color: $accent-color
+      height: 41px
+      width: 41px
+      border-radius: 41px
+      &:hover
+          // border-color: rgba(255, 214, 41, 0.7)
+          background: rgba(0, 188, 212, .1)    
+      &.current
+          background: $accent-color
+          color: #fff
+
+//img hover
+
+.kad_img_upload_widget
+    &:hover
+        filter: brightness(110%)
+
+// homepage update
+
+#kad-blog-grid 
+    .blog_item
+        background: #fff
+
+.captiontitle
+    font-weight: normal
+
+.flex-caption
+    color: #fff
+    text-shadow: none
+
+.container
+    @media (min-width: 1200px)
+        width: 1200px
+        padding: 0
+
+// homepage naujausi postai
+
+.home_blog
+    article
+        header
+            h4
+                line-height: 1.3            
+    .hometitle
+        text-align: left
+        margin-bottom: 30px
+    .row
+        @media (min-width: 768px)
+            display: flex
+            padding: 0 5px
+        .home-sidebar
+            @media (min-width: 768px)
+                display: flex
+                padding: 0 10px
+                article
+                    margin-bottom: 0
+            .postmeta
+                &.updated
+                    display: none
+    &.home-padding
+        padding: 0
+
+#homelatestposts
+    .kt_home_archivecontent 
+        article
+            &:nth-child(-n+4)
+                display: none
+
+.paged
+    #homelatestposts
+        .kt_home_archivecontent 
+            article
+                &:nth-child(-n+4)
+                    display: block
+
+.home-widget-area-widget
+    &.widget_media_image
+        margin-bottom: 10px
+        img
+            padding: 0
+            margin: 0
+
+#ktsidebar
+    &.col-lg-3
+        @media (min-width: 1200px)
+            min-width: 330px
+        [class*="wp-image"]
+            padding: 0
+            margin: 0
+.col-lg-9
+    @media (min-width: 1200px)
+        width: calc(100% - 330px)
+
+.form-search
+    max-width: 100%
+
+// homepage post carusel
+
+.sow-carousel-wrapper ul.sow-carousel-items li.sow-carousel-item h3
+    line-height: 18px
+
+
+// comments web field
+
+#commentform div.row .col-md-4:last-child
+    display: none
+
+// Footer
+
+.footernav ul li a
+    font-size: 12px
+
+.footerclass
+    background: rgba(255, 255, 255, 0.4)
+
+// cookies notice    
+
+.slapukai 
+    h5
+        color: #333
+
+#cookie-notice
+    box-shadow: 0 -2px 10px #0000001f
+
+#cn-notice-text
+    font-size: 14px
+    display: block
+    max-width: 1100px
+    margin: 5px auto 15px
+
+.postdate
+  background: $accent-color
+  color: #fff
+
+.product_item
+  .price
+    font-size: 20px
+    font-weight: 400
+    display: block
+
+.headerfont, .tp-caption, .yith-wcan-list li, .yith-wcan .yith-wcan-reset-navigation, ul.yith-wcan-label li a, .price
+  font-family: Poppins
+
+.product
+  .summary .price
+    font-size: 20px
+    font-weight: bold
+    padding: 1.25rem 0 
+  .panel-group
+    margin-top: 3rem
+  .product-summary-case
+    @media screen and ( min-width: 992px )
+      padding-left: 3rem
+  .entry-summary .kad_add_to_cart, .product .entry-summary .single_add_to_cart_button
+    padding: 0 40px
+      
+
+.panel.panel-default
+  margin-bottom: -1px
+  border-left: none
+  border-right: none 
+  .panel-heading
+    .accordion-toggle
+      border-left: none
+      i
+        margin-top: 0
+
+.product_related_carousel
+  .product_item
+    .product_details h5
+      line-height: 20px
+      font-weight: 400
+      font-size: 12px
+    .price
+      font-size: 18px
+      font-weight: 400
+
+.carousel_outerrim
+  h3
+    padding-bottom: 1.5rem
+
+#content div.product .woocommerce-tabs ul.tabs li a
+  padding: 0.5em 1.25rem
+
+.woocommerce-Tabs-panel
+  h2
+    display: none
+
+#place_order
+  width: 100%
+
+// cart
+
+.woocommerce input.input-text, form.checkout #order_comments, form.checkout input.input-text, form.checkout textarea
+  padding: 1.25rem
+  border: 1px solid #d9d9d9
+
+#billing_country_field
+  display: none!important
+
+.woocommerce-shipping-methods
+  label
+    display: flex!important
+    align-items: center
+    font-weight: 400
+    .woocommerce-Price-amount
+      &.amount
+        margin-left: 1rem
+
+
+
+
