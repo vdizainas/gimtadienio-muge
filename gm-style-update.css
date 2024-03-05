@@ -315,6 +315,7 @@
 }
 .product .panel-group {
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 @media screen and (min-width: 992px) {
   .product .product-summary-case {
@@ -379,4 +380,10 @@
 }
 .woocommerce-shipping-methods label .woocommerce-Price-amount.amount {
   margin-left: 1rem;
+}
+
+.xoo-wsc-ft-btn-checkout {
+  background-color: #00BCD4 !important;
+  color: #ffffff !important;
+  border: 1px solid #00BCD4 !important;
 }/*# sourceMappingURL=gm-style-update.css.map */
