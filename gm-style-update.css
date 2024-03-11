@@ -61,6 +61,16 @@
 .kad-mobile-nav .kad-nav-inner li a:hover, .kad-mobile-nav .kad-nav-inner li.current-menu-item > a {
   background: rgb(0, 188, 212);
   color: #fff;
+  border-radius: 100px;
+}
+.kad-mobile-nav .kad-nav-inner li.current-menu-item .kad-submenu-accordion i {
+  color: #fff;
+}
+.kad-mobile-nav .kad-nav-inner li .kad-submenu-accordion.toggle-active {
+  background: transparent;
+}
+.kad-mobile-nav .kad-nav-inner li .kad-submenu-accordion i {
+  line-height: 1.3;
 }
 
 .kad-mnav > li > a {
@@ -298,10 +308,19 @@
   color: #fff;
 }
 
+.product_item {
+  padding: 1rem;
+}
 .product_item .price {
   font-size: 20px;
   font-weight: 400;
   display: block;
+  margin-bottom: 1rem;
+}
+.product_item .add_to_cart_button {
+  padding: 8px 18px;
+  background: #00BCD4;
+  border-radius: 48px;
 }
 
 .headerfont, .tp-caption, .yith-wcan-list li, .yith-wcan .yith-wcan-reset-navigation, ul.yith-wcan-label li a, .price {
@@ -386,4 +405,73 @@
   background-color: #00BCD4 !important;
   color: #ffffff !important;
   border: 1px solid #00BCD4 !important;
+}
+
+.woocommerce-shop.woocommerce-page .woocommerce-result-count {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .woocommerce-shop.woocommerce-page #filters {
+    height: auto;
+    display: block;
+    overflow: visible;
+    padding: 1rem;
+  }
+  .woocommerce-shop.woocommerce-page #filters .filter-trigger {
+    display: none;
+  }
+  .woocommerce-shop.woocommerce-page #filters .woocommerce-ordering {
+    float: none;
+    margin-bottom: 1rem;
+  }
+}
+.woocommerce-shop.woocommerce-page #filters li a {
+  border-radius: 100px;
+}
+
+.home[class*=paged-] .home_blog {
+  display: none;
+}
+.home .product_title_link h5 {
+  display: -webkit-box;
+  height: 56px;
+  min-height: unset;
+  margin-bottom: 1rem;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.home .home-product .hometitle {
+  text-align: left;
+}
+
+.kt-image-inner-contain {
+  width: 100%;
+}
+
+.menu-krautuvele {
+  position: relative;
+}
+.menu-krautuvele::after {
+  content: "NAUJIENA";
+  position: absolute;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: #ff0039;
+  color: #fff;
+  padding: 0.25rem 1rem;
+  border-radius: 50px;
+  top: -13px;
+  left: 25%;
+}
+@media screen and (max-width: 992px) {
+  .menu-krautuvele {
+    display: flex;
+    align-items: center;
+  }
+  .menu-krautuvele::after {
+    position: static;
+    margin-left: 1rem;
+  }
 }/*# sourceMappingURL=gm-style-update.css.map */
